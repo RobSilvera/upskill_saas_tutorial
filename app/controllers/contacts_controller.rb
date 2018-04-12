@@ -10,9 +10,9 @@ class ContactsController < ApplicationController
       
       
       
-      name = params [:contact] [:name]
-      email = params [:contact] [:email]
-      comments = params [:contact] [:comments]
+      name = params[:contact] [:name]
+      email = params[:contact] [:email]
+      comments = params[:contact] [:comments]
       ContactMailer.contact_email(name, email, comments).deliver
       
       
